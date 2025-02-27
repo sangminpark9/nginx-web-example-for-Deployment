@@ -54,7 +54,7 @@ pipeline {
         
         stage('Deploy') {
             steps {
-                sshagent(['jenkins-ssh-key']) {
+                sshagent(['jkwebkey-jk']) {
                     // 원격 디렉토리 생성
                     sh "ssh -o StrictHostKeyChecking=no ${REMOTE_HOST} 'mkdir -p ${REMOTE_DIR}'"
                     
