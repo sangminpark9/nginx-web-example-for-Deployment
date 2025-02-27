@@ -4,7 +4,7 @@ pipeline {
     environment {
         DOCKER_IMAGE = 'nginx-web-example'
         DOCKER_TAG = "${env.BUILD_NUMBER}"
-        REMOTE_HOST = 'ec2-user@웹서버_프라이빗_IP'
+        REMOTE_HOST = 'ec2-user@10.0.2.208'
         REMOTE_DIR = '/home/ec2-user/nginx-app'
     }
     
