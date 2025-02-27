@@ -1,9 +1,11 @@
 version: '3'
-
 services:
-  web:
+  nginx-web:
     image: nginx-web-example:latest
-    container_name: nginx-web
     ports:
       - "80:80"
-    restart: always
+    volumes:
+      - web-content:/usr/share/nginx/html
+
+volumes:
+  web-content:
