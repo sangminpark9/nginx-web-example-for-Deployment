@@ -4,8 +4,4 @@ services:
     image: nginx-web-example:latest
     ports:
       - "80:80"
-    volumes:
-      - web-content:/usr/share/nginx/html
-
-volumes:
-  web-content:
+    # volumes 항목 제거 – 그러면 컨테이너는 이미지 내 파일을 사용합니다.
