@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins CI/CD 데모 사이트</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Jenkins CI/CD 데모 사이트</h1>
+            <p>Docker, Jenkins, GitHub를 활용한 자동화 테스트</p>
+        </header>
+        
+        <main>
+            <section class="info-section">
+                <h2>CI/CD 파이프라인 데모</h2>
+                <p>이 웹사이트는 다음 기술을 사용한 CI/CD 파이프라인으로 배포되었습니다:</p>
+                <ul>
+                    <li>GitHub - 소스 코드 관리</li>
+                    <li>Jenkins - 자동화된 빌드 및 배포</li>
+                    <li>Docker - 컨테이너화</li>
+                    <li>Nginx - 웹 서버</li>
+                </ul>
+            </section>
+            
+            <section class="status-section">
+                <h2>빌드 상태</h2>
+                <div id="build-info">
+                    <p>최근 빌드: <span id="build-number">1</span></p>
+                    <p>빌드 시간: <span id="build-time">2025-02-26 12:00:00</span></p>
+                    <p>빌드 상태: <span id="build-status" class="status-success">성공</span></p>
+                </div>
+                <button id="refresh-btn">상태 새로고침</button>
+            </section>
+        </main>
+        
+        <footer>
+            <p>© 2025 CI/CD 데모 | <a href="https://github.com/your-username/nginx-web-example">GitHub 저장소</a></p>
+        </footer>
+    </div>
+    
+    <script src="js/main.js"></script>
+</body>
+</html>
